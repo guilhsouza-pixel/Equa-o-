@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Equação do 2º Grau</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Calculadora de Equação do 2º Grau</h1>
+      <p>Informe os coeficientes <strong>a</strong>, <strong>b</strong> e <strong>c</strong> para resolver ax² + bx + c = 0 e visualizar o gráfico da parábola.</p>
+    </section>
+
+    <section class="card form-card">
+      <div class="inputs">
+        <label>
+          Coeficiente a
+          <input id="coefA" type="number" step="any" value="1" />
+        </label>
+        <label>
+          Coeficiente b
+          <input id="coefB" type="number" step="any" value="-3" />
+        </label>
+        <label>
+          Coeficiente c
+          <input id="coefC" type="number" step="any" value="2" />
+        </label>
+      </div>
+      <button id="calcularBtn">Calcular e gerar gráfico</button>
+    </section>
+
+    <section class="grid">
+      <section class="card result-card">
+        <h2>Resultado</h2>
+        <div id="resultado" class="resultado"></div>
+      </section>
+
+      <section class="card graph-card">
+        <h2>Gráfico</h2>
+        <canvas id="grafico" width="700" height="420"></canvas>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
